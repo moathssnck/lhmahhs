@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, User, Menu } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const images = ["/dsa.png", "/2.png", "/3.png", "/4.png"];
@@ -61,7 +62,19 @@ export function HeroSection() {
           ›
         </button>
 
-        {/* Overlay Content */}
+        <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center md:items-end text-center md:text-right px-8 space-y-6">
+        
+          <p className="text-lg md:text-xl text-gray-100">
+          عرض خاص على الخروف النعيمي — خصم ٥٠٪؜! السعر الآن فقط ٣٧ د.ك بدلاً من ٧٥ د.ك.
+          </p>
+          <div className="flex gap-4 justify-center md:justify-end">
+        <Link href="/products">
+            <Button size="lg" className="bg-red-800 hover:bg-red-800/90 text-gray-100">
+              اطلب الآن
+            </Button></Link>
+         
+          </div>
+        </div>
       </div>
     </section>
   );
