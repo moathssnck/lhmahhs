@@ -3,22 +3,29 @@ import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const products = [
+  
+  {
+    id: "0",
+    name: "عرض خاص على الخروف النعيمي — خصم ٥٠٪؜! السعر الآن فقط ٣٧ د.ك بدلاً من ٧٥ د.ك",
+    price: 37,
+    image: "/dsa.png",
+  },
   {
     id: "1",
     name: "نصف خروف نعيمي (≈ 10–12 كغ)",
-    price: 60,
+    price: 20,
     image: "/half.jpg.jpg",
   },
   {
     id: "2",
     name: "خروف نعيمي محلي (عقيقة)",
-    price: 105,
+    price: 37,
     image: "/104_thumbnail.jpg",
   },
   {
     id: "3",
     name: "خروف نعيمي كويتي كامل",
-    price: 110, // يختلف من 60 إلى 150 د.ك حسب الوزن
+    price: 50, // يختلف من 60 إلى 150 د.ك حسب الوزن
     image: "/namikw.jpg.jpg",
   },
   {
