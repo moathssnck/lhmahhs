@@ -4,8 +4,7 @@ import { ShoppingCart, User, Menu } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
-const images = ["/1.png", "/2.png", "/3.png", "/4.png"];
-
+const images = ["/dsa.png", "/2.png", "/3.png", "/4.png"];
 export function HeroSection() {
   const [current, setCurrent] = useState(0);
 

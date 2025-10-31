@@ -57,6 +57,9 @@ export default function CheckoutPage() {
     // Save order to localStorage
     try {
       localStorage.setItem("pendingOrder", JSON.stringify(orderData));
+  paymentType==="partial"?
+  localStorage.setItem("amount", orderData.partialAmount.toString()):
+
       localStorage.setItem("amount", orderData.totalAmount.toString());
     } catch (error) {
       console.error("Failed to save order to localStorage:", error);
@@ -219,7 +222,7 @@ export default function CheckoutPage() {
               {paymentType === "partial" && (
                 <div className="bg-muted p-3 rounded-lg space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span>المبلغ المطلوب الآن (30%)</span>
+                    <span>المبلغ المطلوب الآن</span>
                     <span className="font-bold text-primary">
                       {partialAmount.toFixed(3)} د.ك
                     </span>
