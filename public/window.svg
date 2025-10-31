@@ -1,0 +1,34 @@
+const products = [
+  {
+    id: "1",
+    name: "نصف خروف نعيمي (≈ 10–12 كغ)",
+    price: 60,
+    img: "/half.jpg.jpg",
+  },
+  {
+    id: "2",
+
+    name: "خروف نعيمي محلي (عقيقة)",
+    price: 105,
+    img: "/104_thumbnail.jpg",
+  },
+  {
+    id: "3",
+
+    name: "خروف نعيمي كويتي كامل",
+    price: 110, // يختلف من 60 إلى 150 د.ك حسب الوزن
+    img: "/namikw.jpg.jpg",
+  },
+  {
+    id: "4",
+    name: "كتف خروف نعيمي (≈ 3 كغ)",
+    price: 11,
+    img: "/ktf.jpg.jpg",
+  },
+  {
+    id: "5",
+    name: "فخذ خروف نعيمي (≈ 3.5 كغ)",
+    price: 15,
+    img: "/fkd.jpg.jpg",
+  },
+];
